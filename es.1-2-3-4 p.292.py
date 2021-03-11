@@ -3,8 +3,8 @@
 #esercizio_3 = Aggiungi alla classe Atleta un metodo chiamato effettua_visita che ponga l'attributo visitaMedica uguale a True.
 #esercizio_4 = Aggiungi alla classe Atleta un metodo per visualizzare i dati del giocatore.
 
-class atleta:
-    def __init__(self ,nome ,altezza ,sport ,anni ,squadra = 0 ,visitaMedica = False):
+class Atleta:
+    def __init__(self, nome, altezza, sport, anni, squadra = 0, visitaMedica = False):
         self.nome = nome
         self.sport = sport
         self.altezza = altezza
@@ -20,7 +20,7 @@ class atleta:
     def effettua_visita(self):
         self.visitaMedica = True
         
-a1 = atleta("Alessio", 1.90, "basket", 20)
+a1 = Atleta("Alessio", 1.90, "basket", 20)
 a1.squadra("Roma")
 a1.visualizza_dati()
 a1.effettua_visita()
